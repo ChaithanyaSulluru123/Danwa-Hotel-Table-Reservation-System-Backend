@@ -146,7 +146,6 @@ class ReservationSerializer(serializers.ModelSerializer):
         available_tables = candidate_tables.exclude(
             id__in=occupied_table_ids
         )
-
         if not available_tables.exists():
             raise serializers.ValidationError({
                 "reservation_date": "No suitable dining table is available for the selected date and time."
