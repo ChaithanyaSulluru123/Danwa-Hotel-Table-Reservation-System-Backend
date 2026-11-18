@@ -12,6 +12,7 @@ The system includes reservation validation, restaurant operating-hour validation
 
 ## 2. Technologies Used
 
+
 | Technology | Version / Details |
 |---|---|
 | Python | 3.12 |

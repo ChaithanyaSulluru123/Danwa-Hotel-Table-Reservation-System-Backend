@@ -150,7 +150,6 @@ class ReservationSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({
                 "reservation_date": "No suitable dining table is available for the selected date and time."
             })
-
         return attrs
 
     def create(self, validated_data):

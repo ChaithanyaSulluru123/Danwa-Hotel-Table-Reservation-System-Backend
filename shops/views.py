@@ -59,6 +59,7 @@ class DiningTableListAPIView(generics.ListCreateAPIView):
 
         return [permission() for permission in permission_classes]
 
+
 class DiningTableDetailAPIView(generics.RetrieveUpdateAPIView):
     queryset = DiningTable.objects.select_related("shop").all()
     serializer_class = DiningTableSerializer

@@ -30,7 +30,6 @@ class Notification(models.Model):
         on_delete=models.CASCADE,
         related_name="notifications"
     )
-
     notification_type = models.CharField(
         max_length=30,
         choices=NOTIFICATION_TYPE_CHOICES

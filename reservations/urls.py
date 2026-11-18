@@ -6,8 +6,7 @@ from .views import (
     ReservationApproveAPIView,
     ReservationRejectAPIView,
     ReservationTableAssignAPIView,
-    ReservationAvailabilityAPIView,
-    
+    ReservationAvailabilityAPIView, 
     ) 
 urlpatterns =[
     path("",ReservationListCreateAPIView.as_view(),name = "reservation-list-create"),

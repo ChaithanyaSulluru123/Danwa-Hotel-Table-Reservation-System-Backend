@@ -3,7 +3,6 @@ from django.utils import timezone
 
 from .models import Notification
 
-
 def create_notification(
     reservation,
     notification_type,

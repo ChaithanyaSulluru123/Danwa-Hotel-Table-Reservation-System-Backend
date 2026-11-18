@@ -171,7 +171,6 @@ class ReservationRejectAPIView(generics.GenericAPIView):
 
     def post(self, request, *args, **kwargs):
         from notifications.services import create_notification
-
         with transaction.atomic():
             reservation = self.get_object()
 

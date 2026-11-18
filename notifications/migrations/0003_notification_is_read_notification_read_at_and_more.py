@@ -8,7 +8,6 @@ class Migration(migrations.Migration):
     dependencies = [
         ('notifications', '0002_alter_notification_delivery_status'),
     ]
-
     operations = [
         migrations.AddField(
             model_name='notification',
